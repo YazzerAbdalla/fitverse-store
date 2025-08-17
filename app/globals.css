@@ -90,6 +90,8 @@
   --sidebar-accent-foreground: #1e1e2f;
   --sidebar-border: #e5e7eb;
   --sidebar-ring: #9ca3af;
+
+  --font-dynapuff: "DynaPuff", cursive;
 }
 
 /* 🌑 DARK THEME */
@@ -139,11 +141,25 @@
   --sidebar-ring: #4b5563;
 }
 
+.font-dynapuff {
+  font-family: var(--font-dynapuff);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-[25px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  h2 {
+    @apply text-[20px] xl:text-[36px] leading-[1.1] font-semibold;
+  }
+  h3 {
+    @apply text-[16px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 }
