@@ -25,10 +25,10 @@ const MobileNav = ({
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col overflow-y-scroll">
+      <SheetContent className="flex flex-col overflow-y-scroll backdrop-blur-lg">
         {/** logo */}
-        <SheetTitle>.</SheetTitle>
-        <div className="mt-20 mb-10 text-center text-2xl">
+        <SheetTitle></SheetTitle>
+        <div className="mt-36 mb-10 text-center text-2xl">
           <Link href={"/"}>
             <h1 className="text-primary flex-col">
               FitVerse<span className="text-accent">.</span>
@@ -42,8 +42,12 @@ const MobileNav = ({
               <Link
                 className={`${
                   link.href === pathname &&
-                  "text-accent border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
+                  "text-primary border-b-2 border-accent hover:text-accent"
+                } ${
+                  link.name === "Coming Soon"
+                    ? "text-muted-foreground cursor-not-allowed "
+                    : "text-accent hover:text-primary"
+                } text-accent text-xl capitalize  transition-all`}
                 key={index}
                 href={link.href}
                 aria-label={`${link.name} link`}
