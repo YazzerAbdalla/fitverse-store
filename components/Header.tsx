@@ -12,8 +12,7 @@ const navLinks = [
 
 const Header = () => {
   // const isScroll = useScrollDetection();
-  const isInView = useHeroAway();
-  console.log("🚀 ~ Header ~ isInView:", isInView);
+  // const isInView = useHeroAway();
   return (
     <header
       className={`backdrop-blur-xl w-full h-16 sticky top-0 z-50  flex items-center justify-between xl:px-12 px-5`}
