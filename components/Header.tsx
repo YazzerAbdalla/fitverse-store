@@ -3,8 +3,6 @@ import React from "react";
 import MobileNav from "./MobileNav";
 
 const navLinks = [
-  { name: "Shop", href: "/shop" },
-  { name: "Collections", href: "/collections" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
