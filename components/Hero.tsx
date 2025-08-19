@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="px-6 py-20 bg-[url('/hero-bg.jpg')] bg-center bg-cover min-h-[100vh]">
+    <section className="px-6 py-20 xl:p-28  bg-[url('/hero-bg.webp')] bg-center bg-cover min-h-[100vh]">
       <h1 className="text-h1 font-dynapuff text-primary">
         Fuel Your Fitness. Elevate Your Lifestyle
       </h1>
