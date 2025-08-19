@@ -92,6 +92,12 @@
   --sidebar-ring: #9ca3af;
 
   --font-dynapuff: "DynaPuff", cursive;
+
+  --font-h1: clamp(2.5rem, 5vw, 3.5rem);  
+  --font-h2: clamp(2rem, 4vw, 2.75rem);
+  --font-h3: clamp(1.5rem, 3vw, 2rem);
+  --font-h4: clamp(1.25rem, 2.5vw, 1.5rem);
+  --font-p: clamp(1rem, 1.5vw, 1.125rem);
 }
 
 /* 🌑 DARK THEME */
@@ -154,12 +160,18 @@
   }
 
   h1 {
-    @apply text-[25px] xl:text-[48px] leading-[1.1] font-semibold;
+    font-size: var(--font-h1);
   }
   h2 {
-    @apply text-[20px] xl:text-[36px] leading-[1.1] font-semibold;
+    font-size: var(--font-h2);
   }
   h3 {
-    @apply text-[16px] xl:text-[24px] leading-[1.1] font-semibold;
+    font-size: var(--font-h3);
+  }
+  h4 {
+    font-size: var(--font-h4);
+  }
+  p {
+    font-size: var(--font-p);
   }
 }
