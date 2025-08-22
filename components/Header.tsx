@@ -2,8 +2,6 @@
 import Link from "next/link";
 import React from "react";
 import MobileNav from "./MobileNav";
-// import useScrollDetection from "@/hooks/useScroll";
-import useHeroAway from "@/hooks/useHeroAway";
 
 const navLinks = [
   { name: "Learn More", href: "#about" }, // scrolls to about section
@@ -11,15 +9,13 @@ const navLinks = [
 ];
 
 const Header = () => {
-  // const isScroll = useScrollDetection();
-  // const isInView = useHeroAway();
   return (
     <header
       className={`backdrop-blur-xl w-full h-16 sticky top-0 z-50  flex items-center justify-between xl:px-12 px-5`}
     >
       {/* Logo / Brand */}
       <h1 className="text-h2 font-bold text-primary">
-        <Link href="/" aria-label="Home">
+        <Link href="#hero" aria-label="Home" className="transition">
           FitVerse<span className="text-accent">.</span>
         </Link>
       </h1>
@@ -30,7 +26,7 @@ const Header = () => {
           {navLinks.map(({ name, href }, index) => (
             <li key={index}>
               <Link
-                className={`text-lg md:text-xl font-semibold uppercase transition-colors ${
+                className={`text-lg md:text-xl font-semibold uppercase transition ${
                   name === "Coming Soon"
                     ? "text-muted-foreground cursor-not-allowed"
                     : "text-accent hover:text-primary"

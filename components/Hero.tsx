@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full">
+    <section id="hero" className="relative min-h-screen w-full">
       {/* Background image */}
       <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-center bg-cover" />
 

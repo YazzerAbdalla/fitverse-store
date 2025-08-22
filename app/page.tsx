@@ -3,14 +3,9 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div>
-      {/* //{" "}
-      <section id="hero" className="bg-card-foreground min-h-screen">
-        // <h1>Hi from Home page</h1>
-        //{" "}
-      </section> */}
+    <main>
       <Hero />
-      {/* <About /> */}
-    </div>
+      <About />
+    </main>
   );
 }

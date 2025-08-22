@@ -32,7 +32,7 @@ const MobileNav = ({
         {/** logo */}
         <SheetTitle></SheetTitle>
         <div className="mt-36 mb-10 text-center text-2xl">
-          <Link href={"/"}>
+          <Link className="transition" href={"/"}>
             <h1 className="text-primary flex-col">
               FitVerse<span className="text-accent">.</span>
             </h1>
