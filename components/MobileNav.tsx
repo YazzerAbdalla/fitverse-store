@@ -28,7 +28,7 @@ const MobileNav = ({
       >
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col overflow-y-scroll backdrop-blur-lg">
+      <SheetContent className="flex flex-col overflow-y-scroll backdrop-blur-xl bg-gray-950/80 border-b border-white/10 shadow-2xl shadow-black/20">
         {/** logo */}
         <SheetTitle></SheetTitle>
         <div className="mt-36 mb-10 text-center text-2xl">
