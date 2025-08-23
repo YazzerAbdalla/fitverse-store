@@ -11,7 +11,7 @@ export default function About() {
         <p className="text-p text-gray-700 leading-relaxed mb-6">
           Hi, I’m{" "}
           <span className="font-semibold text-primary">Yasser Abdalla</span>, a
-          passionate <span className="font-medium">Frontend Developer</span>
+          passionate <span className="font-medium">Full stack Developer </span>
           and fitness enthusiast. This project is a blend of my love for{" "}
           <span className="font-medium">technology</span>
           and <span className="font-medium">healthy living</span>.
